@@ -2,53 +2,48 @@ import streamlit as st
 import random
 import string
 
-# 💜 تنسيق CSS
+# 🎨 تنسيق CSS حسب طلبك بالضبط
 st.markdown("""
     <style>
     .stApp {
-        background-image: url('https://i.imgur.com/6yUQ7qu.jpg'); /* صورة القفل */
-        background-size: cover;
-        background-position: center;
+        background-image: url("https://image.freepik.com/free-vector/purple-lock-with-key_23-2149479577.jpg");
+        background-size: auto 100%;
+        background-position: right center;
         background-repeat: no-repeat;
         color: white;
     }
-
     .block-container {
-        background-color: rgba(0, 0, 0, 0.5); /* بوكس شفاف مش فوق القفل */
+        background-color: rgba(0, 0, 0, 0.6);
         padding: 2rem;
         border-radius: 15px;
-        margin-top: 100px;
+        max-width: 600px;
+        margin: 100px auto;
     }
-
     h1 {
         color: white;
-        font-size: 32px;
+        font-size: 34px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
     }
-
     label, .stNumberInput label {
         color: white;
         font-size: 18px;
         font-weight: 500;
     }
-
     .stButton > button {
-        background-color: #b388eb; /* موف فاتح */
-        color: black; /* كلام الزر العادي */
+        background-color: #dcd3ff;
+        color: black;
         font-size: 16px;
         font-weight: bold;
         border-radius: 8px;
         padding: 10px 20px;
         margin-top: 10px;
     }
-
     .stButton > button:active {
-        background-color: #5a189a !important; /* موف غامق لما تضغطي */
-        color: white !important;
+        background-color: #6f42c1;
+        color: white;
     }
-
     .stSuccess {
         font-size: 20px;
         color: white;
@@ -62,7 +57,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 💬 محتوى الأبلكيشن
+# 🧠 واجهة التطبيق
 st.title("🔐 Password Generator")
 st.write("Welcome to the Password Generator!")
 
